@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
+    </style>
+
+    <title>DevStore</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="left-box">
+            <header class="header-left-box">    
+                <div class="svg-lobinho"> <img src="assets/wolf.png"/> </div>
+                <div class="title"> <span>Dev</span>Store</div>
+            </header>
+
+            <div class="black-space"></div>
+            <div class="management">
+                <div> Gerenciamento </div>
+                <img src="assets/setinha pra baixo.svg"/>
+            </div>
+
+            <div class="espaco-produtos">
+                <div> Produtos </div>
+            </div>
+        </div>
+
+        <div class="right-box">
+            <div class="header">
+                <div class="user">
+                    <div class="user-image"> 
+                        <img src="assets/eu.JPG"/> 
+                        <div class="absolute"> 3 </div> 
+                    </div>
+
+                    <div class="user-name"> Olá, <b> Daniel Pereira </b> </div>
+                </div>
+
+                <div class="buttons-header">
+                    <div class="refresh-button"> <button> <img src="assets/atualizar.svg" alt=""/> </button> </div>
+                    <div class="logout"> <button> <img src="assets/log-out.svg" alt=""/> </button> </div>
+                </div>
+            </div>
+            <div class="bottom-bar-right-header"></div>
+
+            <div class="body-right-box">
+                <div class="new-product-box">
+                    <div class="text-new-product">
+                        <div class="bar-new-product"></div>
+                        <div class="text-new-product"> Novo Produto </div>
+                    </div>
+
+                    <div class="input-new-product">
+                        <div class="input-left">
+                            <div class="boxzinha-especial-left">    
+                                <div class="boxzinha-input">
+                                    <div class="name-product"> Nome: </div>
+                                    <div class="input-aaa"> <input/> </div>
+                                </div>
+
+                                <div class="boxzinha-input">
+                                    <div class="category-product"> Categoria: </div>
+                                    <div class="input-aaa"> <input/> </div>
+                                </div>
+
+                                <div class="boxzinha-input">
+                                    <div class="rating-product"> Avaliação: </div>
+                                    <div class="input-aaa"> <input/> </div>
+                                </div>
+                            </div>
+                            
+                            <div class="boxzinha-input">
+                                <div class="link-image-product"> Link Imagem: </div>
+                                <div class="input-link"> <input/> </div>
+                            </div>
+
+                            <div class="boxzinha-input">
+                                <div class="description-product"> Descrição: </div>
+                                <div class="textarea-description"> <textarea></textarea> </div>
+                            </div>
+                        </div>
+
+                        <div class="input-right">
+                            <div class="boxzinha-especial-right">
+                                <div class="boxzinha-input">
+                                    <div class="price-of-product"> Preço DE: </div>
+                                    <div class="input-price-of"> <input/> </div>
+                                </div>
+
+                                <div class="boxzinha-input">
+                                    <div class="price-for-product"> Preço POR: </div>
+                                    <div class="input-price-for"> <input/> </div>
+                                </div>
+                            </div>
+
+                            <div class="boxzinha-input-inventory">
+                                <div class="inventory-product"> Estoque: </div>
+                                <div class="input"> <input/> </div>
+                            </div>
+                        </div>
+
+                        <div class="button-create"> <button> Cadastrar </button> </div>
+                    </div>
+                </div>
+
+                <div class="product-registered-box">
+                    <div class="row-bar">
+                        <div class="bar-new-product"></div>
+                        <div class="registered-products"> Produtos Matriculados </div>
+                    </div>
+
+                    <table class="table-product">
+                        <thead>
+                            <tr>
+                                <th class="a"> </th>
+                                <th class="a"> </th>
+                                <th> ID </th>
+                                <th> Produto </th>
+                                <th> Categoria </th>
+                                <th> Preço </th>
+                                <th> Estoque </th>
+                                <th class="a"></th>
+                                <th class="a"></th>
+                                <th class="a"></th>
+                                <th class="a"></th>
+                                <th class="a"></th>
+                                <th class="a"></th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                            <tr class="int">
+                                <td></td>
+                                <td> <img class="image-product" src="assets/esfera-dragao.png" alt="" /> </td>
+                                <td> 1 </td>
+                                <td> Esfera do Dragão </td>
+                                <td> Acessórios </td>
+                                <td> R$ 15,56 </td>
+                                <td> 14 </td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td> <button> <img src="assets/button-editar.svg" /> </button> </td>
+                                <td> <button> <img src="assets/button-remover.svg" /> </button> </td>
+                            </tr>
+
+                            <tr>
+                                <td></td>
+                                <td> <img class="fotinha-produto" src="assets/esfera-dragao.png" alt="" /> </td>
+                                <td> 2 </td>
+                                <td> Esfera do Dragão </td>
+                                <td> Acessórios </td>
+                                <td> R$ 15,56 </td>
+                                <td> 14 </td>
+                            </tr>
+
+                            <tr class="int">
+                                <td></td>
+                                <td> <img class="fotinha-produto" src="assets/esfera-dragao.png" alt="" /> </td>
+                                <td> 3 </td>
+                                <td> Esfera do Dragão </td>
+                                <td> Acessórios </td>
+                                <td> R$ 15,56 </td>
+                                <td> 14 </td>
+                            </tr>
+
+                            <tr>
+                                <td></td>
+                                <td> <img class="fotinha-produto" src="assets/esfera-dragao.png" alt="" /> </td>
+                                <td> 4 </td>
+                                <td> Esfera do Dragão </td>
+                                <td> Acessórios </td>
+                                <td> R$ 15,56 </td>
+                                <td> 14 </td>
+                            </tr>
+
+                            <tr class="int">
+                                <td></td>
+                                <td> <img class="fotinha-produto" src="assets/esfera-dragao.png" alt="" /> </td>
+                                <td> 5 </td>
+                                <td> Esfera do Dragão </td>
+                                <td> Acessórios </td>
+                                <td> R$ 15,56 </td>
+                                <td> 14 </td>
+                            </tr>
+
+                            <tr>
+                                <td></td>
+                                <td> <img class="fotinha-produto" src="assets/esfera-dragao.png" alt="" /> </td>
+                                <td> 6 </td>
+                                <td> Esfera do Dragão </td>
+                                <td> Acessórios </td>
+                                <td> R$ 15,56 </td>
+                                <td> 14 </td>
+                            </tr>
+
+                            <tr class="int">
+                                <td></td>
+                                <td> <img class="fotinha-produto" src="assets/esfera-dragao.png" alt="" /> </td>
+                                <td> 7 </td>
+                                <td> Esfera do Dragão </td>
+                                <td> Acessórios </td>
+                                <td> R$ 15,56 </td>
+                                <td> 14 </td>
+                            </tr>
+
+                            <tr>
+                                <td></td>
+                                <td> <img class="fotinha-produto" src="assets/esfera-dragao.png" alt="" /> </td>
+                                <td> 8 </td>
+                                <td> Esfera do Dragão </td>
+                                <td> Acessórios </td>
+                                <td> R$ 15,56 </td>
+                                <td> 14 </td>
+                            </tr>
+
+                        </tbody>
+
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

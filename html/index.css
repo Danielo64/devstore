@@ -1,0 +1,508 @@
+body {
+    margin: 0px;
+}
+
+* {
+    box-sizing: border-box;
+    cursor: default;
+    font-family: 'Roboto';
+}
+
+input, button {
+    outline: none;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    min-width: 100%;
+}
+
+.left-box {
+    display: flex;
+    flex-direction: column;
+    
+    background-color: #2B3031;
+    
+    min-height: 100vh;
+    padding-bottom: 0em;
+}
+
+.header-left-box {
+    display: flex;
+    flex-direction: row;
+
+    margin: 2em;
+    align-items: center;
+    justify-content: center;
+}
+
+img {
+    cursor: pointer;
+}
+
+.svg-lobinho {
+    border-right: 5px solid transparent;
+}
+
+.title {
+    color: white;
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.title span {
+    color: #10EAEA;
+}
+
+.black-space {
+    background-color: #262626;
+    width: 356px;
+    height: 61px;
+}
+
+.management {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    
+    height: 70px;
+}
+
+.management div {
+    color: white;
+    font-size: 18px;
+    font-weight: 800;
+    margin-left: 1em;
+}
+
+.espaco-produtos {
+    display: flex;
+    flex-direction: row;
+    
+    height: 55px;
+
+    background-color: white;
+    border-left: 4px solid  #10EAEA;
+
+    color: #1A1A1A;
+    font-size: 18px;
+    
+    align-items: center;
+
+    padding-left: 4.3em;
+}
+
+.espaco-produtos div {
+    font-weight: 800;
+    color: #1A1A1A;
+}
+
+.right-box {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.header {
+   display: flex;
+   flex-direction: row;
+   background-color:  #fff;
+   padding: 1.3em;
+   align-items: center;
+   justify-content: space-between;
+}
+
+.header {
+    margin-top: 0em;
+    padding-right: 0em;
+}
+
+.user {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.user-image {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    border-radius: 50%;
+}
+
+.user-image img {
+    width: 57px;
+    height: 57px;
+    border-radius: 50%;
+    height: 57px;
+}
+
+.absolute {
+    color: white;
+    background-color: #119FDC;
+    border: 3px solid white;
+    border-radius: 50%;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    font-size: .7em;
+}
+
+.user-name  {
+    padding-left: 1em;
+    font-size: 16px;
+}
+
+.user-name b {
+    color: #4a4a4a;
+}
+
+.buttons-header {
+    display: flex;
+    flex-direction: row;
+    padding: 0.5em;
+}
+
+.buttons-header {
+    margin-right: 2em;
+}
+
+.refresh-button button {
+    border-radius: 50%;
+    background-color: #119FDC;
+    width: 44px;
+    height: 44px;
+    border: none;
+    margin: .4em;
+}
+
+.logout button {
+    border-radius: 50%;
+    background-color: #119FDC;
+    width: 44px;
+    height: 44px;
+    border: none;
+    margin: .4em;
+}
+
+button {
+    cursor: pointer;
+}
+
+.bottom-bar-right-header {
+    border-bottom: .5px solid #e9e9e9;
+    width: 97%;
+    align-self: center;
+    background-color: #e9e9e9;
+}
+
+.body-right-box {
+    display: flex;
+    flex-direction: column;
+
+    background-color: #F5F5F5;
+
+    height: 100%;
+    padding: 4em;
+    
+    margin-bottom: 0em;
+    margin-right: 0em;
+}
+
+.new-product-box {
+    display: flex;
+    flex-direction: column;
+
+    background-color: white;
+    box-shadow: 0px 0px 4px 1px rgba(186, 186, 186, 0.25);
+    padding-top: 2em;
+    padding-right: 12em;
+    padding-bottom: 2em;
+    padding-left: 3em;
+}
+
+.text-new-product {
+    display: flex;
+    flex-direction: row;
+
+    font-size: 32px;
+}
+
+.text-new-product div {
+    font-weight: bolder;
+}
+
+.bar-new-product {
+    border: 3px solid #119FDC;
+    border-radius: .5em;
+    margin-right: .4em;
+    background-color: #119FDC;
+}
+
+.input-new-product {
+    display: flex;
+    flex-direction: row;
+    padding-top: 2.4em;
+}
+
+.input-left {
+    display: flex;
+    flex-direction: column;
+    margin-right: -18.3em;
+}
+
+.boxzinha-input {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.boxzinha-especial-left {
+    margin-left: 0.4em
+}
+
+.name-product {
+    font-size: 18px;
+    color: #615858;
+    width: 5.5em;
+    padding-left: 1.6em;
+    font-weight: 800;
+}
+
+.category-product {
+    font-size: 18px;
+    color: #615858;
+    width: 5.5em;
+    font-weight: 800;
+}
+
+.rating-product {
+    font-size: 18px;
+    color: #615858;
+    width: 5.5em;
+    font-weight: 800;
+}
+
+.link-image-product {
+    font-size: 18px;
+    color: #615858;
+    width: 6em;
+    font-weight: 800;
+    margin-left: -1em;
+}
+
+.description-product {
+    font-size: 18px;
+    color: #615858;
+    margin-left: 0.3em;
+    margin-top: -6.3em;
+    font-weight: 800;
+}
+
+.input-right {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1em;
+    margin-left:2em;
+    margin-right: 10em;
+}
+
+.boxzinha-input-inventory {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    
+    margin-left: -2.1em
+}
+
+.boxzinha-especial-right {
+    margin-left: 2em;
+}
+
+.price-of-product {
+    font-size: 18px;
+    color: #615858;
+    margin-left: -4.5em;
+    font-weight: 800;
+}
+
+.price-for-product {
+    font-size: 18px;
+    color: #615858;
+    margin-left: -5em;
+    font-weight: 800;
+}
+
+.inventory-product {
+    font-size: 18px;
+    color: #615858;
+    margin-right: 0.8em;
+    font-weight: 800;
+}
+
+input {
+    width: 209px;
+    height: 36px;
+
+    background: #FFFFFF;
+    border: 1px solid #A8A8A8;
+    box-sizing: border-box;
+    border-radius: 5px;
+    padding-left: .5em;
+}
+
+.input {
+    margin-top: .5em;
+    margin-bottom: .5em;
+}
+
+.input-aaa {
+    margin-top: .5em;
+    margin-bottom: .5em;
+    margin-left: -0.17em;
+}
+
+.input-link {
+    margin-top: .5em;
+    margin-bottom: .5em;
+    margin-left: 0.8em;
+}
+
+.input-link input {
+    width: 625px;
+}
+
+.input-price-of {
+    margin-top: .5em;
+    margin-bottom: .5em;
+    margin-left: 1.2em;
+}
+
+.input-price-for {
+    margin-top: .5em;
+    margin-bottom: .5em;
+    margin-left: 1em;
+}
+
+.textarea-description {
+    margin-top: .5em;
+    margin-bottom: .5em;
+}
+
+textarea {
+    width: 625px;
+    height: 150px;
+
+    background: #FFFFFF;
+    border: 1px solid #A8A8A8;
+    box-sizing: border-box;
+    border-radius: 5px;
+
+    margin-left: 1em;
+}
+
+.button-create {
+    align-self: flex-end;
+    justify-self: flex-end;
+    padding-bottom: 1.5em;
+    margin-left: -9em;
+}
+
+.button-create button {
+    width: 106px;
+    height: 36px;
+
+    background: #119FDC;
+    border-radius: 44px;
+    border: none;
+    color: white;
+    font-size: 14px;
+    margin-left: 2em;
+    font-weight: bold;
+}
+
+.button-create button:hover {
+    background-color: #0f6c94;
+    transition: 2s;
+}
+
+.product-registered-box {
+    display: flex;
+    flex-direction: column;
+
+    background-color: white;
+    box-shadow: 0px 0px 4px 1px rgba(186, 186, 186, 0.25);
+    padding: 2em;
+    margin-top: 2em;
+    
+}
+
+.row-bar {
+    display: flex;
+    flex-direction: row;
+    padding-left: .9em;
+}
+
+.registered-products {
+    display: flex;
+    flex-direction: row;
+    font-weight: bolder;
+    font-size: 32px;
+    padding-left: .3em;
+}
+
+table {
+    margin-top: 2em;
+}
+
+.table-product {
+    border-collapse: collapse;
+}
+
+thead {
+    background-color: #6CC3DF;
+}
+
+th {
+    height: 61.93px;
+    text-align: left;
+    padding: 1em;
+    color: #ffff;
+    font-weight: 800;
+}
+
+.a {
+    width: .1em;
+}
+
+tbody {
+    background-color: #F5F5F5;
+}
+
+.int {
+    background-color: #fff;
+}
+
+td {
+    text-align: left;
+    height:  61.93px;
+    padding: 1em;
+    color: #6D6868;
+    font-weight: 600;
+}
+
+td button {
+    border-radius: 50%;
+    background-color: #565656;
+    border: none;
+    width: 31px;
+    height: 31px;
+}
+
+.image-product {
+    width: 40px; 
+    height: 40px;
+}
