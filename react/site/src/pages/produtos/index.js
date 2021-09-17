@@ -49,7 +49,7 @@ export default function Index() {
             else
                 toast.dark('💕 Produto inserido!');
         } else {
-            let r = await api.alterar(idAlterando, nome, categoria, precoDe, precoPor, avaliacao, descricao, imagem, estoque);
+            let r = await api.alterar(idAlterando, nome, categoria, precoDe, precoPor, avaliacao, descricao, estoque, imagem);
 
             if (r.erro)
                 alert(r.erro)
@@ -62,14 +62,14 @@ export default function Index() {
     }
 
     function limparCampos() {
-        setNome();
-        setCategoria();
-        setPrecoDe();
-        setPrecoPor();
-        setAvaliacao();
-        setDescricao();
-        setEstoque();
-        setImagem();
+        setNome('');
+        setCategoria('');
+        setPrecoDe('');
+        setPrecoPor('');
+        setAvaliacao('');
+        setDescricao('');
+        setEstoque('');
+        setImagem('');
         setIdAlterando(0);
     }
 
@@ -106,7 +106,7 @@ export default function Index() {
         setDescricao(item.ds_produto);
         setImagem(item.img_produto);
         setEstoque(item.qtd_estoque);
-        setIdAlterando(item.id_matricula);
+        setIdAlterando(item.id_produto);
     }
 
     // função chamada 1x quando a tela abre
