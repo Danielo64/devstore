@@ -19,6 +19,9 @@ app.post('/produto', async (req, resp) => {
     try {
         let { nome, categoria, precoDe, precoPor, avaliacao, descricao, estoque, imagem } = req.body;
 
+        if (!nome || nome.replace(/\n/g, '') == '')
+            return resp.send({ erro: 'Nome é obrigatório!' });
+
         let r = await db.tb_produto.create(
         {
             nm_produto: nome,

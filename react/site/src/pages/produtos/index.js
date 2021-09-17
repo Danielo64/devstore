@@ -17,15 +17,16 @@ import Api from '../../services/api'
 const api = new Api();
 
 export default function Index() {
+
     const [produtos, setProdutos] = useState([]);
-    const [nome, setNome] = useState('');
-    const [categoria, setCategoria] = useState('');
-    const [precoDe, setPrecoDe] = useState('');
-    const [precoPor, setPrecoPor] = useState('');
-    const [avaliacao, setAvaliacao] = useState('');
-    const [descricao, setDescricao] = useState('');
-    const [imagem, setImagem] = useState('');
-    const [estoque, setEstoque] = useState('');
+    const [nome, setNome] = useState();
+    const [categoria, setCategoria] = useState();
+    const [precoDe, setPrecoDe] = useState();
+    const [precoPor, setPrecoPor] = useState();
+    const [avaliacao, setAvaliacao] = useState();
+    const [descricao, setDescricao] = useState();
+    const [imagem, setImagem] = useState();
+    const [estoque, setEstoque] = useState();
     const [idAlterando, setIdAlterando] = useState(0);
 
     const loading = useRef(null);
@@ -61,7 +62,7 @@ export default function Index() {
     }
 
     function limparCampos() {
-        setNome('');
+        setNome();
         setCategoria();
         setPrecoDe();
         setPrecoPor();
@@ -72,14 +73,29 @@ export default function Index() {
         setIdAlterando(0);
     }
 
-    async function remover(id) {
-        let r = await api.remover(id);
-        if (r.erro)
-            alert(r.erro);
-        else
-            toast.dark('💕 Produto removido');
-        listar();
-    }
+    function remover(id) {
+        confirmAlert({
+            title: 'Remover Produto',
+            message: `Tem certeza que deseja remover o produto ${id}?`,
+            buttons: [
+              {
+                label: 'Sim',
+                onClick: async() => {
+                    let b = await api.remover(id);
+                    if (b.erro) 
+                        toast.error(`${b.erro}`);
+                    else {
+                        toast.dark('Produto removido!');
+                        listar();
+                    }
+                }
+              },
+              {
+                label: 'Não'
+              }
+            ]
+        });   
+      }
 
     async function editar(item) {
         setNome(item.nm_produto);
@@ -88,6 +104,7 @@ export default function Index() {
         setPrecoPor(item.vl_preco_por);
         setAvaliacao(item.vl_avaliacao);
         setDescricao(item.ds_produto);
+        setImagem(item.img_produto);
         setEstoque(item.qtd_estoque);
         setIdAlterando(item.id_matricula);
     }
