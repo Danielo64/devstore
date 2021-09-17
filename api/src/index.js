@@ -19,8 +19,6 @@ app.post('/produto', async (req, resp) => {
     try {
         let { nome, categoria, precoDe, precoPor, avaliacao, descricao, estoque, imagem } = req.body;
 
-        
-
         let r = await db.tb_produto.create(
         {
             nm_produto: nome,
