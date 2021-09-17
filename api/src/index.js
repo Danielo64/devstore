@@ -11,7 +11,7 @@ app.get('/produto', async (req, resp) => {
         let produtos = await db.tb_produto.findAll({ order: [['id_produto', 'desc']] });
         resp.send(produtos);
     } catch (e) {
-        resp.send({ erro: e.toString() })
+        resp.send({ erro: e.toString() });
     }
 })
 
@@ -19,8 +19,7 @@ app.post('/produto', async (req, resp) => {
     try {
         let { nome, categoria, precoDe, precoPor, avaliacao, descricao, estoque, imagem } = req.body;
 
-        if (!nome || nome.replace(/\n/g, '') == '')
-            return resp.send({ erro: 'Nome é obrigatório!' });
+        
 
         let r = await db.tb_produto.create(
         {
@@ -37,7 +36,7 @@ app.post('/produto', async (req, resp) => {
         })
         resp.send(r);
     } catch (e) {
-        resp.send({ erro: e.toString() })
+        resp.send({ erro: e.toString() });
     }
 })
 
@@ -65,7 +64,7 @@ app.put('/produto/:id', async (req, resp) => {
         )
         resp.sendStatus(200);
     } catch (e) {
-        resp.send({ erro: e.toString() })
+        resp.send({ erro: e.toString() });
     }
 })
 
@@ -73,10 +72,10 @@ app.delete('/produto/:id', async (req, resp) => {
     try {
         let { id } = req.params;
 
-        let r = await db.tb_produto.destroy({ where: { id_produto: id } })
+        let r = await db.tb_produto.destroy({ where: { id_produto: id } });
         resp.sendStatus(200);
     } catch (e) {
-        resp.send({ erro: e.toString() })
+        resp.send({ erro: e.toString() });
     }
 })
 
