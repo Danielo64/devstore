@@ -184,7 +184,7 @@ export default function Index() {
                     <div class="product-registered-box">
                         <div class="row-bar">
                             <div class="bar-new-product"></div>
-                            <div class="registered-products"> Produtos Matriculados </div>
+                            <div class="registered-products"> Produtos Cadastrados </div>
                         </div>
 
                         <table class="table-product">
