@@ -109,7 +109,7 @@ export default function Index() {
         setIdAlterando(item.id_produto);
     }
 
-    // função chamada 1x quando a tela abre
+    // função chamada 1x quando a tela abre!
     useEffect(() => {
         listar();
     }, [])
